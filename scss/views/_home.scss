@@ -1,0 +1,134 @@
+.main{
+    margin-top: 10px;
+    width: 100%;
+
+    .main__container{
+        width: 85%;
+        height: 460px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: end;
+
+        .main__slogan{
+            position: absolute;
+            left: 120px;
+            top: 180px;
+            width: 70%;
+            height: 250px;
+            z-index: 2;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        .main__slogan h2{
+            font-size: 75px;
+            font-weight: normal;
+        }
+        .main__slogan span{
+            font-weight: bold;
+            color: $primaryColor;
+        }
+        .main__slogan h3{
+            font-size: 30px;
+            font-weight: normal;
+        }
+        .main__slogan button{
+            width: 150px;
+            padding: 10px 20px;
+            background-color: $primaryColor;
+            border: none;
+            border-radius: 20px;
+            color: white;
+            cursor: pointer;
+            font-weight: bold;
+        }
+        .transparency{
+            background: rgb(255,255,255);
+            background: linear-gradient(90deg, rgba(255,255,255,1) 8%, rgba(0,212,255,0) 100%);
+            width: 630px;
+            height: 460px;
+            position: absolute;
+            z-index: 1;
+        }
+        .main__image{
+            position: relative;
+            width: 52%;
+            height: 100%;
+        }
+        .main__image img{
+            width: 100%;
+            height: 100%;
+        }
+    }
+}
+
+.pizza {
+    width: 100%;
+    margin: 50px 0px;
+
+    .pizza__recipes{
+        font-size: 30px;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    .pizza__container{
+        width: 85%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 70px;
+
+        .pizza__card{
+            width: 270px;
+            height: 500px;
+            border: 2px #BDBDBD solid;
+            border-radius: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .pizza__card img{
+            width: 100%;
+            height: 230px;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            border-radius: 20px 20px 0px 0px;
+        }
+        .pizza__card select{
+            width: 85%;
+            margin-top: 15px;
+            padding: 10px 0px;
+            border-radius: 20px;
+            border: 1px #777 solid;
+            background-color: white;
+        }
+        .pizza__card button{
+            width: 85%;
+            margin-top: 15px;
+            padding: 12px 0px;
+            border-radius: 20px;
+            border: none;
+            background-color: $primaryColor;
+            color: white;
+            font-weight: bold;
+        }
+        .pizza__cardTitle{
+            font-size: 20px;
+            font-weight: bold;
+            text-align: center;
+            margin-top: 5px;
+        }
+        .pizza__cardDescription{
+            color: #777;
+            text-align: center;
+            margin-top: 8px;
+        }
+        .pizza__price{
+            @extend .pizza__cardTitle;
+            font-size: 25px;
+            margin-top: 15px;
+        }
+    }
+}

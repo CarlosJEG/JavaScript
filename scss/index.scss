@@ -1,0 +1,11 @@
+//Misc
+@import './misc/variables';
+@import './misc/mixins';
+@import './misc/normalize';
+
+// Partials
+@import './partials/header';
+@import './partials/footer';
+
+// Views
+@import './views/home';

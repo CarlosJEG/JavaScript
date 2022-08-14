@@ -27,22 +27,27 @@ function SeleccionarProductos() {
     switch (pizza) {
         case "Pepperoni":
             carrito = productos.splice(0, 1)
-
+            console.log("Ordenaste la siguiente pizza: " + carrito[0].nombre + " tiene un precio de: " + carrito[0].precio)
         break
         case "Hawaiana":
             carrito = productos.splice(1, 1)
+            console.log("Ordenaste la siguiente pizza: " + carrito[0].nombre + " tiene un precio de: " + carrito[0].precio)
         break
         case "Napolitana":
             carrito = productos.splice(2, 1)
+            console.log("Ordenaste la siguiente pizza: " + carrito[0].nombre + " tiene un precio de: " + carrito[0].precio)
         break
         case "Española":
             carrito = productos.splice(3, 1)
+            console.log("Ordenaste la siguiente pizza: " + carrito[0].nombre + " tiene un precio de: " + carrito[0].precio)
         break
         case "Vegetariana":
             carrito = productos.splice(4, 1)
+            console.log("Ordenaste la siguiente pizza: " + carrito[0].nombre + " tiene un precio de: " + carrito[0].precio)
         break
         case "Margarita":
             carrito = productos.splice(5, 1)
+            console.log("Ordenaste la siguiente pizza: " + carrito[0].nombre + " tiene un precio de: " + carrito[0].precio)
         break
         default:
             console.log("Producto no disponible")

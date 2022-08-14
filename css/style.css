@@ -1,0 +1,185 @@
+/* Variables */
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;700&display=swap");
+/* Normalize */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Fira Sans', sans-serif; }
+
+li {
+  list-style: none; }
+
+a {
+  text-decoration: none;
+  color: #333333; }
+
+img {
+  width: 100%; }
+
+.header {
+  width: 100%; }
+  .header .header__container {
+    width: 85%;
+    height: 80px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between; }
+    .header .header__container .header__logo {
+      width: 300px; }
+      .header .header__container .header__logo .header__logoLink {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center; }
+      .header .header__container .header__logo .header__logoLink img {
+        width: 80px; }
+      .header .header__container .header__logo .header__logoLink h1 {
+        width: 200px;
+        font-size: 30px;
+        color: #333333; }
+    .header .header__container .header__navigation {
+      width: 600px; }
+      .header .header__container .header__navigation .header__boxNav {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: end;
+        gap: 20px; }
+      .header .header__container .header__navigation .header__link a {
+        padding: 3px;
+        transition: all 0.3s; }
+      .header .header__container .header__navigation .header__link a:hover {
+        color: #F44A25; }
+      .header .header__container .header__navigation .active {
+        color: #F44A25;
+        font-weight: bold; }
+    .header .header__container .header__menu {
+      width: 300px;
+      display: flex;
+      align-items: center;
+      justify-content: end;
+      gap: 20px; }
+      .header .header__container .header__menu .header__search i {
+        font-size: 18px; }
+      .header .header__container .header__menu .header__cart i {
+        font-size: 18px; }
+      .header .header__container .header__menu .header__signIn {
+        padding: 10px 20px;
+        background-color: #F44A25;
+        border: none;
+        border-radius: 20px;
+        color: white;
+        cursor: pointer;
+        font-weight: bold; }
+
+.main {
+  margin-top: 10px;
+  width: 100%; }
+  .main .main__container {
+    width: 85%;
+    height: 460px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: end; }
+    .main .main__container .main__slogan {
+      position: absolute;
+      left: 120px;
+      top: 180px;
+      width: 70%;
+      height: 250px;
+      z-index: 2;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between; }
+    .main .main__container .main__slogan h2 {
+      font-size: 75px;
+      font-weight: normal; }
+    .main .main__container .main__slogan span {
+      font-weight: bold;
+      color: #F44A25; }
+    .main .main__container .main__slogan h3 {
+      font-size: 30px;
+      font-weight: normal; }
+    .main .main__container .main__slogan button {
+      width: 150px;
+      padding: 10px 20px;
+      background-color: #F44A25;
+      border: none;
+      border-radius: 20px;
+      color: white;
+      cursor: pointer;
+      font-weight: bold; }
+    .main .main__container .transparency {
+      background: white;
+      background: linear-gradient(90deg, white 8%, rgba(0, 212, 255, 0) 100%);
+      width: 630px;
+      height: 460px;
+      position: absolute;
+      z-index: 1; }
+    .main .main__container .main__image {
+      position: relative;
+      width: 52%;
+      height: 100%; }
+    .main .main__container .main__image img {
+      width: 100%;
+      height: 100%; }
+
+.pizza {
+  width: 100%;
+  margin: 50px 0px; }
+  .pizza .pizza__recipes {
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 30px; }
+  .pizza .pizza__container {
+    width: 85%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 70px; }
+    .pizza .pizza__container .pizza__card {
+      width: 270px;
+      height: 500px;
+      border: 2px #BDBDBD solid;
+      border-radius: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center; }
+    .pizza .pizza__container .pizza__card img {
+      width: 100%;
+      height: 230px;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      border-radius: 20px 20px 0px 0px; }
+    .pizza .pizza__container .pizza__card select {
+      width: 85%;
+      margin-top: 15px;
+      padding: 10px 0px;
+      border-radius: 20px;
+      border: 1px #777 solid;
+      background-color: white; }
+    .pizza .pizza__container .pizza__card button {
+      width: 85%;
+      margin-top: 15px;
+      padding: 12px 0px;
+      border-radius: 20px;
+      border: none;
+      background-color: #F44A25;
+      color: white;
+      font-weight: bold; }
+    .pizza .pizza__container .pizza__cardTitle, .pizza .pizza__container .pizza__price {
+      font-size: 20px;
+      font-weight: bold;
+      text-align: center;
+      margin-top: 5px; }
+    .pizza .pizza__container .pizza__cardDescription {
+      color: #777;
+      text-align: center;
+      margin-top: 8px; }
+    .pizza .pizza__container .pizza__price {
+      font-size: 25px;
+      margin-top: 15px; }
