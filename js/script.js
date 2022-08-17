@@ -53,3 +53,17 @@ function SeleccionarProductos() {
             console.log("Producto no disponible")
     }
 }
+
+
+const sizepizza = ["Regular", "large", "extra large"]
+
+
+function agregandoElementos() {
+    const selectElement = document.getElementById("sizePizza", "sizePizza2")
+        selectElement.innerHTML += `
+        <option>` + sizepizza[0] + `</option>
+        <option>` + sizepizza[1] + `</option>
+        <option>` + sizepizza[2] + `</option>`
+}
+
+agregandoElementos()
