@@ -1,7 +1,7 @@
 // Variables
 
-const sizes = document.querySelectorAll('.sizePizza')
-const cost = document.querySelector(".pizza__price")
+const sizes = document.querySelectorAll(".sizePizza")
+const cost = document.querySelectorAll(".pizza__price")
 
 const pizzas = [
     {pizza: "Pepperoni", cost: 25},
@@ -20,28 +20,27 @@ const sizePizza = [
 
 const iva = 1.19
 
+
 // Recorrer un array 
 
-const cargarListado = (select, array) => {
-    if (array.length > 0) {
-        array.forEach(element => {
-            select.innerHTML += `<option value="${element.factor}">${element.size}</option>`
-        });
-    } else {
-        alert("Producto no seleccionado")
+const cargarListado = (sizes, sizePizza) => {
+    for (let i = 0; i < sizes.length; i++){
+        const listado = sizes[i]
+        listado.innerHTML += `
+        <option value="${sizePizza[0].factor}">${sizePizza[0].size}</option>
+        <option value="${sizePizza[1].factor}">${sizePizza[1].size}</option>
+        <option value="${sizePizza[2].factor}">${sizePizza[2].size}</option>`
     }
 }
-
 cargarListado(sizes, sizePizza)
 
-const cargarPrecio = (array) => {
-    for (let i = 0; i <= array.length; i++){
-        cost.innerText = "$ " + array[i].cost
+const cargarPrecio = (cost) => {
+    for (let i = 0; i < cost.length; i++){
+        const precio = cost[i]
+        precio.innerText = "$ " + pizzas[i].cost
     }
 }
-
-cargarPrecio(pizzas)
-
+cargarPrecio(cost)
 
 // calculo
 
@@ -58,8 +57,10 @@ class CalculoPrecio {
 }
 
 const realizarCalculo = () => {
-    const cal = new CalculoPrecio(pizzas[0].cost, sizes.value, iva)
-        console.log(cal.calculo())
+    const cal = new CalculoPrecio(pizzas[1].cost, sizes[1].value, iva)
+        cost[1].innerText = "$ " + cal.calculo()
+        console.log(cal)
 }
 
 realizarCalculo()
+
