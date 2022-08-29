@@ -170,7 +170,8 @@ img {
       border: none;
       background-color: #F44A25;
       color: white;
-      font-weight: bold; }
+      font-weight: bold;
+      cursor: pointer; }
     .pizza .pizza__container .pizza__cardTitle, .pizza .pizza__container .pizza__price {
       font-size: 20px;
       font-weight: bold;
