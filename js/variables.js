@@ -5,12 +5,12 @@ const cost = document.querySelectorAll(".pizza__price")
 const addToCart = document.querySelectorAll(".addToCart")
 
 const pizzas = [
-    {pizza: "Pepperoni", cost: 25},
-    {pizza: "Hawaiian", cost: 24.5},
-    {pizza: "Neapolitan", cost: 24},
-    {pizza: "Spain", cost: 25.5},
-    {pizza: "Vegetarian", cost: 26},
-    {pizza: "Margherita", cost: 26.5}
+    {pizza: "Pizza Pepperoni", cost: 25},
+    {pizza: "Pizza Hawaiian", cost: 24.5},
+    {pizza: "Pizza Neapolitan", cost: 24},
+    {pizza: "Pizza Spain", cost: 25.5},
+    {pizza: "Pizza Vegetarian", cost: 26},
+    {pizza: "Pizza Margherita", cost: 26.5}
 ]
 
 const sizePizza = [

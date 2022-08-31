@@ -17,7 +17,10 @@ sizes[0].addEventListener("change", () => {
         cost[0].innerText = "$ " + cal.calculo()
     
     addToCart[0].addEventListener("click", ()=> {
-        localStorage.setItem("Producto Seleccionado", JSON.stringify(cal))
+        localStorage.setItem("Precio de la Pizza", JSON.stringify(cal.calculo()))
+
+        const {pizza} = pizzas[0]
+        localStorage.setItem("Nombre de la Pizza", JSON.stringify(pizza))
     })
 })
 
@@ -26,7 +29,10 @@ sizes[1].addEventListener("change", () => {
         cost[1].innerText = "$ " + cal.calculo()
 
     addToCart[1].addEventListener("click", ()=> {
-        localStorage.setItem("Producto Seleccionado", JSON.stringify(cal))
+        localStorage.setItem("Precio de la Pizza", JSON.stringify(cal.calculo()))
+
+        const {pizza} = pizzas[1]
+        localStorage.setItem("Nombre de la Pizza", JSON.stringify(pizza))
     })
 })
 
@@ -35,7 +41,10 @@ sizes[2].addEventListener("change", () => {
         cost[2].innerText = "$ " + cal.calculo()
 
     addToCart[2].addEventListener("click", ()=> {
-        localStorage.setItem("Producto Seleccionado", JSON.stringify(cal))
+        localStorage.setItem("Precio de la Pizza", JSON.stringify(cal.calculo()))
+
+        const {pizza} = pizzas[2]
+        localStorage.setItem("Nombre de la Pizza", JSON.stringify(pizza))
     })
 })
 
@@ -44,7 +53,10 @@ sizes[3].addEventListener("change", () => {
         cost[3].innerText = "$ " + cal.calculo()
 
     addToCart[3].addEventListener("click", ()=> {
-        localStorage.setItem("Producto Seleccionado", JSON.stringify(cal))
+        localStorage.setItem("Precio de la Pizza", JSON.stringify(cal.calculo()))
+
+        const {pizza} = pizzas[3]
+        localStorage.setItem("Nombre de la Pizza", JSON.stringify(pizza))
     })
 })
 
@@ -53,7 +65,10 @@ sizes[4].addEventListener("change", () => {
         cost[4].innerText = "$ " + cal.calculo()
     
     addToCart[4].addEventListener("click", ()=> {
-        localStorage.setItem("Producto Seleccionado", JSON.stringify(cal))
+        localStorage.setItem("Precio de la Pizza", JSON.stringify(cal.calculo()))
+
+        const {pizza} = pizzas[4]
+        localStorage.setItem("Nombre de la Pizza", JSON.stringify(pizza))
     })
 })
 
@@ -62,6 +77,9 @@ sizes[5].addEventListener("change", () => {
         cost[5].innerText = "$ " + cal.calculo()
 
     addToCart[5].addEventListener("click", ()=> {
-        localStorage.setItem("Producto Seleccionado", JSON.stringify(cal))
+        localStorage.setItem("Precio de la Pizza", JSON.stringify(cal.calculo()))
+
+        const {pizza} = pizzas[5]
+        localStorage.setItem("Nombre de la Pizza", JSON.stringify(pizza))
     })
 })

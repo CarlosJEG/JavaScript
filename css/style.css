@@ -184,3 +184,42 @@ img {
     .pizza .pizza__container .pizza__price {
       font-size: 25px;
       margin-top: 15px; }
+
+.maintwo {
+  margin-top: 10px;
+  width: 100%; }
+  .maintwo .main__containertwo {
+    width: 85%;
+    height: 460px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column; }
+    .maintwo .main__containertwo .main__selections, .maintwo .main__containertwo .main__options {
+      width: 70%;
+      height: 60px;
+      display: flex; }
+      .maintwo .main__containertwo .main__selections .main__selectionValueOne, .maintwo .main__containertwo .main__options .main__selectionValueOne, .maintwo .main__containertwo .main__selections .main__selectionValueTwo, .maintwo .main__containertwo .main__options .main__selectionValueTwo, .maintwo .main__containertwo .main__options .main__optionValue, .maintwo .main__containertwo .main__options .main__optionValuetwo {
+        width: 50%;
+        border-radius: 15px 0px 0px 0px;
+        background-color: #F44A25;
+        text-align: center;
+        line-height: 58px;
+        color: white;
+        font-weight: bold;
+        border-right: 1px white solid; }
+      .maintwo .main__containertwo .main__selections .main__selectionValueTwo, .maintwo .main__containertwo .main__options .main__selectionValueTwo {
+        border-radius: 0px 15px 0px 0px;
+        border-right: 0px; }
+    .maintwo .main__containertwo .main__options .main__optionValue {
+      background-color: white;
+      border-radius: 0px 0px 0px 15px;
+      color: black;
+      border: 1px grey solid; }
+    .maintwo .main__containertwo .main__options .main__optionValuetwo {
+      background-color: white;
+      border-radius: 0px 0px 15px 0px;
+      color: black;
+      border: 1px grey solid;
+      border-left: 0px; }
