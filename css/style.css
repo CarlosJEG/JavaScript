@@ -196,11 +196,11 @@ img {
     justify-content: start;
     align-items: center;
     flex-direction: column; }
-    .maintwo .main__containertwo .main__selections, .maintwo .main__containertwo .main__options {
+    .maintwo .main__containertwo .main__selections, .maintwo .main__containertwo .main__options, .maintwo .main__containertwo .main__btn {
       width: 70%;
       height: 60px;
       display: flex; }
-      .maintwo .main__containertwo .main__selections .main__selectionValueOne, .maintwo .main__containertwo .main__options .main__selectionValueOne, .maintwo .main__containertwo .main__selections .main__selectionValueTwo, .maintwo .main__containertwo .main__options .main__selectionValueTwo, .maintwo .main__containertwo .main__options .main__optionValue, .maintwo .main__containertwo .main__options .main__optionValuetwo {
+      .maintwo .main__containertwo .main__selections .main__selectionValueOne, .maintwo .main__containertwo .main__options .main__selectionValueOne, .maintwo .main__containertwo .main__btn .main__selectionValueOne, .maintwo .main__containertwo .main__selections .main__selectionValueTwo, .maintwo .main__containertwo .main__options .main__selectionValueTwo, .maintwo .main__containertwo .main__btn .main__selectionValueTwo, .maintwo .main__containertwo .main__options .main__optionValue, .maintwo .main__containertwo .main__options .main__optionValuetwo, .maintwo .main__containertwo .main__btn .main__btnbox, .maintwo .main__containertwo .main__btn .main__btnboxtwo {
         width: 50%;
         border-radius: 15px 0px 0px 0px;
         background-color: #F44A25;
@@ -209,17 +209,40 @@ img {
         color: white;
         font-weight: bold;
         border-right: 1px white solid; }
-      .maintwo .main__containertwo .main__selections .main__selectionValueTwo, .maintwo .main__containertwo .main__options .main__selectionValueTwo {
+      .maintwo .main__containertwo .main__selections .main__selectionValueTwo, .maintwo .main__containertwo .main__options .main__selectionValueTwo, .maintwo .main__containertwo .main__btn .main__selectionValueTwo {
         border-radius: 0px 15px 0px 0px;
         border-right: 0px; }
-    .maintwo .main__containertwo .main__options .main__optionValue {
+    .maintwo .main__containertwo .main__options .main__optionValue, .maintwo .main__containertwo .main__options .main__optionValuetwo {
       background-color: white;
-      border-radius: 0px 0px 0px 15px;
+      border-radius: 0px;
       color: black;
       border: 1px grey solid; }
     .maintwo .main__containertwo .main__options .main__optionValuetwo {
+      border-left: 0px; }
+    .maintwo .main__containertwo .main__btn .main__btnbox {
+      background-color: white;
+      border-radius: 0px 0px 0px 15px;
+      border: 1px grey solid;
+      border-top: 0px; }
+    .maintwo .main__containertwo .main__btn .main__btnboxtwo {
       background-color: white;
       border-radius: 0px 0px 15px 0px;
-      color: black;
       border: 1px grey solid;
+      border-top: 0px;
       border-left: 0px; }
+    .maintwo .main__containertwo .main__btn #btn-cancelar {
+      padding: 15px 164px;
+      border-radius: 0px 0px 0px 15px;
+      border: none;
+      background-color: #AE0000;
+      color: white;
+      font-weight: bold;
+      cursor: pointer; }
+    .maintwo .main__containertwo .main__btn #btn-aceptar {
+      padding: 23px 188px;
+      border-radius: 0px 0px 15px 0px;
+      border: none;
+      background-color: green;
+      color: white;
+      font-weight: bold;
+      cursor: pointer; }

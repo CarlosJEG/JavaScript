@@ -39,17 +39,52 @@
             .main__optionValue{
                 @extend .main__selectionValueOne;
                 background-color: white;
-                border-radius: 0px 0px 0px 15px;
+                border-radius: 0px;
                 color: black;
                 border: 1px grey solid;
             }
             .main__optionValuetwo{
+                @extend .main__optionValue;
+                border-left: 0px;
+            }
+        }
+        .main__btn{
+            @extend .main__selections;
+
+            .main__btnbox{
+                @extend .main__selectionValueOne;
+                background-color: white;
+                border-radius: 0px 0px 0px 15px;
+                border: 1px grey solid;
+                border-top: 0px;
+            }
+
+            .main__btnboxtwo{
                 @extend .main__selectionValueOne;
                 background-color: white;
                 border-radius: 0px 0px 15px 0px;
-                color: black;
                 border: 1px grey solid;
+                border-top: 0px;
                 border-left: 0px;
+            }
+            
+            #btn-cancelar{
+                padding: 15px 164px;
+                border-radius: 0px 0px 0px 15px;
+                border: none;
+                background-color: #AE0000;
+                color: white;
+                font-weight: bold;
+                cursor: pointer;
+            }
+            #btn-aceptar{
+                padding: 23px 188px;
+                border-radius: 0px 0px 15px 0px;
+                border: none;
+                background-color: green;
+                color: white;
+                font-weight: bold;
+                cursor: pointer;
             }
         }
     }
