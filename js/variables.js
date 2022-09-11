@@ -3,6 +3,7 @@
 const sizes = document.querySelectorAll(".sizePizza")
 const cost = document.querySelectorAll(".pizza__price")
 const addToCart = document.querySelectorAll(".addToCart")
+const pizzaTitle = document.querySelectorAll(".pizza__cardTitle")
 
 const pizzas = [
     {pizza: "Pizza Pepperoni", cost: 25},
@@ -21,16 +22,11 @@ const sizePizza = [
 
 const iva = 1.19
 
-
-const options = {
-	method: 'GET',
-	headers: {
-		'X-RapidAPI-Key': 'bbcc7a67cfmshbdfdd5620579701p131a5ajsn41d66c98272f',
-		'X-RapidAPI-Host': 'movies115.p.rapidapi.com'
-	}
-};
-
-fetch('https://movies115.p.rapidapi.com/cartaz', options)
+fetch('https://private-anon-ef0568314c-pizzaapp.apiary-mock.com/restaurants/restaurantId/menu?category=Pizza&orderBy=rank')
 	.then(response => response.json())
-	.then(response => console.log(response))
+	.then(data => {
+        for (let i = 0; i < pizzaTitle.length; i++){
+            pizzaTitle[i].innerHTML = `<p>Pizza ${data[i].name}</p>`
+        }
+    })
 	.catch(err => console.error(err));
