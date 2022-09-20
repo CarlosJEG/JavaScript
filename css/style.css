@@ -17,6 +17,10 @@ a {
 img {
   width: 100%; }
 
+p {
+  font-weight: bold;
+  font-size: 19px; }
+
 .header {
   width: 100%; }
   .header .header__container {
@@ -137,17 +141,17 @@ img {
     width: 85%;
     margin: 0 auto;
     display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 70px; }
+    justify-content: space-evenly;
+    flex-wrap: wrap; }
     .pizza .pizza__container .pizza__card {
-      width: 270px;
+      width: 320px;
       height: 500px;
       border: 2px #BDBDBD solid;
       border-radius: 20px;
       display: flex;
       flex-direction: column;
-      align-items: center; }
+      align-items: center;
+      margin-top: 50px; }
     .pizza .pizza__container .pizza__card img {
       width: 100%;
       height: 230px;
@@ -163,8 +167,8 @@ img {
       border: 1px #777 solid;
       background-color: white; }
     .pizza .pizza__container .pizza__card button {
-      width: 85%;
-      margin-top: 15px;
+      width: 200px;
+      margin-top: 20px;
       padding: 12px 0px;
       border-radius: 20px;
       border: none;
@@ -176,73 +180,209 @@ img {
       font-size: 20px;
       font-weight: bold;
       text-align: center;
-      margin-top: 5px; }
+      margin-top: 15px; }
     .pizza .pizza__container .pizza__cardDescription {
       color: #777;
       text-align: center;
-      margin-top: 8px; }
+      margin-top: 14px; }
     .pizza .pizza__container .pizza__price {
       font-size: 25px;
       margin-top: 15px; }
 
-.maintwo {
-  margin-top: 10px;
-  width: 100%; }
-  .maintwo .main__containertwo {
+.hide {
+  display: none; }
+
+.goToCart {
+  position: sticky;
+  bottom: 50px;
+  left: 80rem;
+  padding: 25px 25px;
+  background-color: #F44A25;
+  border: none;
+  border-radius: 15px;
+  color: white;
+  cursor: pointer;
+  font-weight: bold; }
+
+.carrito {
+  width: 100%;
+  margin-top: 60px; }
+  .carrito .carrito__container {
     width: 85%;
-    height: 460px;
     margin: 0 auto;
+    height: 540px;
     display: flex;
-    justify-content: start;
-    align-items: center;
-    flex-direction: column; }
-    .maintwo .main__containertwo .main__selections, .maintwo .main__containertwo .main__options, .maintwo .main__containertwo .main__btn {
-      width: 70%;
-      height: 60px;
-      display: flex; }
-      .maintwo .main__containertwo .main__selections .main__selectionValueOne, .maintwo .main__containertwo .main__options .main__selectionValueOne, .maintwo .main__containertwo .main__btn .main__selectionValueOne, .maintwo .main__containertwo .main__selections .main__selectionValueTwo, .maintwo .main__containertwo .main__options .main__selectionValueTwo, .maintwo .main__containertwo .main__btn .main__selectionValueTwo, .maintwo .main__containertwo .main__options .main__optionValue, .maintwo .main__containertwo .main__options .main__optionValuetwo, .maintwo .main__containertwo .main__btn .main__btnbox, .maintwo .main__containertwo .main__btn .main__btnboxtwo {
-        width: 50%;
-        border-radius: 15px 0px 0px 0px;
+    justify-content: space-evenly; }
+    .carrito .carrito__container .carrito__productos {
+      width: 42%;
+      height: 100%; }
+      .carrito .carrito__container .carrito__productos .carrito__productosTitulo {
+        width: 100%;
+        height: 90px;
         background-color: #F44A25;
-        text-align: center;
-        line-height: 58px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 15px 15px 0 0; }
+      .carrito .carrito__container .carrito__productos .carrito__productosTitulo h2 {
+        color: white; }
+      .carrito .carrito__container .carrito__productos .carrito__bebida {
+        width: 100%;
+        height: 90px;
+        display: flex;
+        border: 1px #BDBDBD solid;
+        border-top: none; }
+        .carrito .carrito__container .carrito__productos .carrito__bebida .carrito__imgBebida {
+          width: 20%;
+          height: 100%; }
+        .carrito .carrito__container .carrito__productos .carrito__bebida .carrito__imgBebida img {
+          width: 100%;
+          height: 100%; }
+        .carrito .carrito__container .carrito__productos .carrito__bebida .carrito__desBebida {
+          width: 50%;
+          height: 100%;
+          display: flex;
+          justify-content: center;
+          align-items: center; }
+        .carrito .carrito__container .carrito__productos .carrito__bebida .carrito__desBebida p {
+          font-weight: bold;
+          font-size: 20px; }
+        .carrito .carrito__container .carrito__productos .carrito__bebida .carrito__bebida-btn {
+          width: 30%;
+          height: 100%;
+          display: flex;
+          justify-content: center;
+          align-items: center; }
+        .carrito .carrito__container .carrito__productos .carrito__bebida .carrito__bebida-btn button {
+          padding: 10px;
+          background-color: #F44A25;
+          border: none;
+          border-radius: 15px;
+          color: white;
+          cursor: pointer;
+          font-weight: bold; }
+      .carrito .carrito__container .carrito__productos .carrito__delivery {
+        width: 100%;
+        height: 90px;
+        display: flex;
+        border: 1px #BDBDBD solid;
+        border-top: none; }
+        .carrito .carrito__container .carrito__productos .carrito__delivery .carrito__imgdelivery {
+          width: 20%;
+          height: 100%;
+          display: flex;
+          justify-content: center;
+          align-items: center; }
+        .carrito .carrito__container .carrito__productos .carrito__delivery .carrito__imgdelivery img {
+          width: 80%;
+          height: 80%; }
+        .carrito .carrito__container .carrito__productos .carrito__delivery .carrito__desdelivery {
+          width: 50%;
+          height: 100%;
+          display: flex;
+          justify-content: center;
+          align-items: center; }
+        .carrito .carrito__container .carrito__productos .carrito__delivery .carrito__desdelivery p {
+          font-weight: bold;
+          font-size: 20px; }
+        .carrito .carrito__container .carrito__productos .carrito__delivery .carrito__delivery-btn {
+          width: 30%;
+          height: 100%;
+          display: flex;
+          justify-content: center;
+          align-items: center; }
+        .carrito .carrito__container .carrito__productos .carrito__delivery .carrito__delivery-btn button {
+          padding: 10px;
+          background-color: #F44A25;
+          border: none;
+          border-radius: 15px;
+          color: white;
+          cursor: pointer;
+          font-weight: bold; }
+      .carrito .carrito__container .carrito__productos .carrito__pizzas {
+        width: 100%;
+        height: 90px;
+        display: flex;
+        border: 1px #BDBDBD solid;
+        border-top: none; }
+    .carrito .carrito__container .carrito__listaContainer {
+      width: 42%;
+      height: 100%; }
+    .carrito .carrito__container .carrito__lista {
+      width: 100%; }
+      .carrito .carrito__container .carrito__lista .carrito__listaTitulo {
+        width: 100%;
+        height: 90px;
+        background-color: #F44A25;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 15px 15px 0 0; }
+      .carrito .carrito__container .carrito__lista .carrito__listaTitulo h2 {
+        color: white; }
+      .carrito .carrito__container .carrito__lista .carrito__productoSeleccionado {
+        width: 100%;
+        height: 90px;
+        display: flex;
+        border: 1px #BDBDBD solid;
+        border-top: none; }
+        .carrito .carrito__container .carrito__lista .carrito__productoSeleccionado .carrito__nombreProducto {
+          width: 75%;
+          height: 100%;
+          border-right: 1px #BDBDBD solid;
+          display: flex;
+          justify-content: space-evenly;
+          align-items: center;
+          font-weight: bold;
+          font-size: 20px; }
+        .carrito .carrito__container .carrito__lista .carrito__productoSeleccionado .carrito__productoPrecio {
+          width: 25%;
+          height: 100%;
+          display: flex;
+          justify-content: space-evenly;
+          align-items: center;
+          font-weight: bold;
+          font-size: 20px; }
+      .carrito .carrito__container .carrito__lista .carrito__productoAgg {
+        width: 100%;
+        height: 90px;
+        display: flex;
+        border: 1px #BDBDBD solid;
+        border-top: none; }
+      .carrito .carrito__container .carrito__lista .carrito__nombreProductoAgg {
+        width: 75%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-right: 1px #BDBDBD solid; }
+      .carrito .carrito__container .carrito__lista .carrito__PrecioProductoAgg {
+        width: 25%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center; }
+      .carrito .carrito__container .carrito__lista .hidden {
+        display: none; }
+    .carrito .carrito__container .carrito__listaTotal {
+      width: 100%;
+      height: 90px;
+      display: flex;
+      border-radius: 0px 0px 15px 15px; }
+      .carrito .carrito__container .carrito__listaTotal .carrito__listaTitulo {
+        width: 75%;
+        height: 100%;
+        background-color: #F44A25;
+        border-radius: 0px 0px 0px 15px;
+        display: flex;
+        justify-content: center;
+        align-items: center; }
+      .carrito .carrito__container .carrito__listaTotal .carrito__listaTitulo h2 {
         color: white;
-        font-weight: bold;
-        border-right: 1px white solid; }
-      .maintwo .main__containertwo .main__selections .main__selectionValueTwo, .maintwo .main__containertwo .main__options .main__selectionValueTwo, .maintwo .main__containertwo .main__btn .main__selectionValueTwo {
-        border-radius: 0px 15px 0px 0px;
-        border-right: 0px; }
-    .maintwo .main__containertwo .main__options .main__optionValue, .maintwo .main__containertwo .main__options .main__optionValuetwo {
-      background-color: white;
-      border-radius: 0px;
-      color: black;
-      border: 1px grey solid; }
-    .maintwo .main__containertwo .main__options .main__optionValuetwo {
-      border-left: 0px; }
-    .maintwo .main__containertwo .main__btn .main__btnbox {
-      background-color: white;
-      border-radius: 0px 0px 0px 15px;
-      border: 1px grey solid;
-      border-top: 0px; }
-    .maintwo .main__containertwo .main__btn .main__btnboxtwo {
-      background-color: white;
-      border-radius: 0px 0px 15px 0px;
-      border: 1px grey solid;
-      border-top: 0px;
-      border-left: 0px; }
-    .maintwo .main__containertwo .main__btn #btn-cancelar {
-      padding: 15px 164px;
-      border-radius: 0px 0px 0px 15px;
-      border: none;
-      background-color: #AE0000;
-      color: white;
-      font-weight: bold;
-      cursor: pointer; }
-    .maintwo .main__containertwo .main__btn #btn-aceptar {
-      padding: 23px 188px;
-      border-radius: 0px 0px 15px 0px;
-      border: none;
-      background-color: green;
-      color: white;
-      font-weight: bold;
-      cursor: pointer; }
+        text-transform: uppercase; }
+      .carrito .carrito__container .carrito__listaTotal .carrito__total {
+        width: 25%;
+        height: 100%;
+        border-radius: 0px 0px 15px 0px;
+        border-right: 1px #BDBDBD solid;
+        border-bottom: 1px #BDBDBD solid; }

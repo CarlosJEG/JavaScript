@@ -24,19 +24,19 @@
             <div class="header__navigation">
                 <ul class="header__boxNav">
                     <li class="header__link">
-                        <a href="index.html" class="active">Home</a>
+                        <a href="index.html">Inicio</a>
                     </li>
                     <li class="header__link">
                         <a href="#">Menu</a>
                     </li>
-                    <li class="header__link">
-                        <a href="#">Delivery</a>
+                    <li class="header__link" >
+                        <a href="#" class="active">Delivery</a>
                     </li>
                     <li class="header__link">
-                        <a href="#">About us</a>
+                        <a href="#">Nosotros</a>
                     </li>
                     <li class="header__link">
-                        <a href="#">Blog</a>
+                        <a href="#">Contactanos</a>
                     </li>
                 </ul>
             </div>
@@ -47,38 +47,61 @@
                 <spam class="header__cart">
                     <i class="fa-solid fa-cart-shopping"></i>
                 </spam>
-                <button class="header__signIn">Sign In</button>
+                <button class="header__signIn">Inicia Sesion</button>
             </div>
         </div>
     </header> <!-- Header Section-->
 
-    <main class="maintwo">
-        <div class="main__containertwo">
-            <div class="main__selections">
-                <div class="main__selectionValueOne">
-                    <p>Has Selecionado la siguiente pizza:</p>
+    <div class="carrito">
+        <div class="carrito__container">
+            <div class="carrito__productos">
+                <div class="carrito__productosTitulo">
+                    <h2>Desea agregar mas productos o servicios?</h2>
                 </div>
-                <div class="main__selectionValueTwo">
-                    <p>Con Un Precio de:</p>
+                <div class="carrito__bebida">
+                    <div class="carrito__imgBebida">
+                        <img src="./img/bebida.png" alt="bebida">
+                    </div>
+                    <div class="carrito__desBebida">
+                        <p>Coca-Cola 2L por $1</p>
+                    </div>
+                    <div class="carrito__bebida-btn">
+                        <button class="carrito__aggBebida">Agregar Bebida</button>
+                    </div>
                 </div>
+                <div class="carrito__delivery">
+                    <div class="carrito__imgdelivery">
+                        <img src="./img/delivery.png" alt="delivery">
+                    </div>
+                    <div class="carrito__desdelivery">
+                        <p>Delivery por $5</p>
+                    </div>
+                    <div class="carrito__delivery-btn">
+                        <button class="carrito__aggdelivery">Agregar Delivery</button>
+                    </div>
+                </div>
+                <div class="carrito__pizzas"></div>
             </div>
-            <div class="main__options">
-                <div class="main__optionValue">
-                    <p id="optionOne"></p>
+            <div class="carrito__listaContainer">
+                <div class="carrito__lista">
+                    <div class="carrito__listaTitulo">
+                        <h2>Productos Seleccionados</h2>
+                    </div>
+                    <div class="carrito__productoSeleccionado">
+                        <div class="carrito__nombreProducto"></div>
+                        <div class="carrito__productoPrecio"></div>
+                    </div>
                 </div>
-                <div class="main__optionValuetwo">
-                    <p id="optionTwo">$</p>
-                </div>
-            </div>
-            <div class="main__btn">
-                <div class="main__btnbox">
-                    <button id="btn-cancelar">Cancelar compra</button>
-                </div>
-                <div class="main__btnboxtwo">
-                    <button id="btn-aceptar">Comprar</button>
+                <div class="carrito__listaTotal">
+                    <div class="carrito__listaTitulo">
+                        <h2>Total</h2>
+                    </div>
+                    <div class="carrito__total">
+                        <p class="carrito__totalprecio"></p>
+                    </div>
                 </div>
             </div>
         </div>
-    </main>
+    </div>
 </body>
 </html>
