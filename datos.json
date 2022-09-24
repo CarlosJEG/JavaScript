@@ -1,0 +1,26 @@
+[
+    {
+    "name": "Pizza Pepperoni",
+    "cost": 25
+    },
+    {
+    "name": "Pizza Hawaiana",
+    "cost": 24.5
+    },
+    {
+    "name": "Pizza Napolitana",
+    "cost": 24
+    },
+    {
+    "name": "Pizza Española",
+    "cost": 25.5
+    },
+    {
+    "name": "Pizza Vegetariana",
+    "cost": 26
+    },
+    {
+    "name": "Pizza Margarita",
+    "cost": 26.5
+    }
+]

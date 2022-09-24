@@ -6,8 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/65837733d8.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./css/style.css">
-    <script defer src="./js/variables.js"></script>
-    <script defer src="./js/class_operacion.js"></script>
     <script defer src="./js/cart.js"></script>
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <title>Charlie's Pizza</title>
@@ -80,7 +78,6 @@
                         <button class="carrito__aggdelivery">Agregar Delivery</button>
                     </div>
                 </div>
-                <div class="carrito__pizzas"></div>
             </div>
             <div class="carrito__listaContainer">
                 <div class="carrito__lista">
@@ -94,10 +91,12 @@
                 </div>
                 <div class="carrito__listaTotal">
                     <div class="carrito__listaTitulo">
-                        <h2>Total</h2>
+                        <button class="carrito__cancelar">Cancelar Pedido</button>
                     </div>
                     <div class="carrito__total">
-                        <p class="carrito__totalprecio"></p>
+                        <a href="./form.html">
+                            <button class="carrito__aceptar">Aceptar Pedido</button>
+                        </a>
                     </div>
                 </div>
             </div>

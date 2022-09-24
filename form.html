@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/65837733d8.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./css/style.css">
+    <script defer src="./js/form.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <title>Charlie's Pizza</title>
+</head>
+<body>
+    <header class="header"> <!-- Header Section-->
+        <div class="header__container">
+            <div class="header__logo">
+                <a href="index.html" class="header__logoLink">
+                    <img src="./img/logo.svg" alt="logo">
+                    <h1>Charlie's Pizza</h1>
+                </a>
+            </div>
+            <div class="header__navigation">
+                <ul class="header__boxNav">
+                    <li class="header__link">
+                        <a href="index.html">Inicio</a>
+                    </li>
+                    <li class="header__link">
+                        <a href="#">Menu</a>
+                    </li>
+                    <li class="header__link" >
+                        <a href="#" class="active">Delivery</a>
+                    </li>
+                    <li class="header__link">
+                        <a href="#">Nosotros</a>
+                    </li>
+                    <li class="header__link">
+                        <a href="#">Contactanos</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="header__menu">
+                <spam class="header__search">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </spam>
+                <spam class="header__cart">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                </spam>
+                <button class="header__signIn">Inicia Sesion</button>
+            </div>
+        </div>
+    </header> <!-- Header Section-->
+
+    <div class="form__container">
+        <div class="form__titulo">
+            <h2>Antes de continuar con la comprar necesitamos algunos datos...</h2>
+        </div>
+        <div class="form__datos">
+            <label for="name">Nombre:</label>
+            <input type="text" name="name" placeholder="Nombre" value="Carlos">
+
+            <label for="lastname">Apellido:</label>
+            <input type="text" name="lastname" placeholder="Apellido" value="Echagarreta">
+
+            <label for="email">Email:</label>
+            <input type="email" name="email" placeholder="Correo Electronico" value="Email@email.com">
+
+            <label for="phone">Nro Telefono:</label>
+            <input type="tel" name="phone" placeholder="Nro Telefono" value="920432378">
+
+            <label for="direccion">Direccion:</label>
+            <input type="text" name="direccion" placeholder="Direccion" value="wall Street 457">
+        </div>
+        <div class="form__btnSection">
+            <div class="form__cancelar">
+                <button id="cancelar">Cancelar</button>
+            </div>
+            <div class="form__aceptar">
+                <button id="aceptar">Aceptar</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

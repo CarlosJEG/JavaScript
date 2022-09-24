@@ -4,6 +4,9 @@ const aggProducto = document.querySelector(".carrito__lista")
 const btnBebida = document.querySelector(".carrito__aggBebida")
 const btnDelivery = document.querySelector(".carrito__aggdelivery")
 const totalPrecio = document.querySelector(".carrito__totalprecio")
+const btnAceptar = document.querySelector(".carrito__aceptar")
+const btnCancelar = document.querySelector(".carrito__cancelar")
+const vaciarCarrito = document.querySelector(".carrito__productoSeleccionado")
 
 const bebidaText = ["Coca-Cola 2L", 1]
 const devileryText = ["Delivery", 5]
@@ -33,48 +36,23 @@ btnDelivery.addEventListener("click", () => {
   localStorage.setItem("Precio de delivery", devileryText[1])
 })
 
-totalPrecio.innerText = localStorage.getItem("Precio de bebida") + localStorage.getItem("Precio de delivery")
+btnCancelar.addEventListener("click", () => {
+  cartelCancelado()
+  aggProducto.innerHTML = `
+  <div class="carrito__listaTitulo">
+    <h2>Productos Seleccionados</h2>
+  </div>`
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* 
-const btnAceptar = document.querySelector("#btn-aceptar")
-const btnCancelar= document.querySelector("#btn-cancelar")
-
-btnAceptar.addEventListener("click", () => {
-    Swal.fire({
-        position: 'center',
-        icon: 'success',
-        title: 'Has comprado la pizza',
-        showConfirmButton: false,
-        timer: 1500
-      })
 })
 
-btnCancelar.addEventListener("click", () => {
-    Swal.fire({
-        position: 'center',
-        icon: 'error',
-        title: 'Has cancelado el pedido',
-        showConfirmButton: false,
-        timer: 1500
-      })
-}) */
+const cartelCancelado = () => {
+  Swal.fire({
+      toast: false,
+      position: 'center',
+      timer: 3000,
+      timerProgressBar: true,
+      title: 'Se ha cancelado la compra',
+      icon: 'error',
+      showConfirmButton: false,
+    })
+}

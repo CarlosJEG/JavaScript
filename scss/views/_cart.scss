@@ -68,6 +68,7 @@
                 display: flex;
                 border: 1px #BDBDBD solid;
                 border-top: none;
+                border-radius: 0 0 15px 15px;
 
                 .carrito__imgdelivery{
                     width: 20%;
@@ -101,13 +102,6 @@
                 .carrito__delivery-btn button{
                     @include btn2;
                 }
-            }
-            .carrito__pizzas{
-                width: 100%;
-                height: 90px;
-                display: flex;
-                border: 1px #BDBDBD solid;
-                border-top: none;
             }
         }
         .carrito__listaContainer{
@@ -185,24 +179,31 @@
             border-radius: 0px 0px 15px 15px;
 
             .carrito__listaTitulo{
-                width: 75%;
+                width: 50%;
                 height: 100%;
-                background-color: $primaryColor;
                 border-radius: 0px 0px 0px 15px;
+                border-right: 1px #BDBDBD solid;
+                border-bottom: 1px #BDBDBD solid;
+                border-left: 1px #BDBDBD solid;
                 display: flex;
                 justify-content: center;
                 align-items: center;
             }
-            .carrito__listaTitulo h2{
-                color: white;
-                text-transform: uppercase;
-            }
             .carrito__total{
-                width: 25%;
+                width: 50%;
                 height: 100%;
                 border-radius: 0px 0px 15px 0px;
                 border-right: 1px #BDBDBD solid;
                 border-bottom: 1px #BDBDBD solid;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            .carrito__cancelar{
+                @include btn2;
+            }
+            .carrito__aceptar{
+                @include btn2;
             }
         }
     }

@@ -23,12 +23,6 @@ const sizePizza = [
 const deliveryCosto = 2.4
 const iva = 1.19
 
-const cargarTitulo = () => {
-    for (let i = 0; i < tituloPizza.length; i++) {
-        tituloPizza[i].innerText = pizzas[i].pizza
-    }
-}
-cargarTitulo()
 
 const cargarSeleccion = () => {
     for (let i = 0; i < tamanoPizza.length; i++) {
@@ -139,3 +133,15 @@ const cartel = () => {
 const showbtn = () => {
     mostrarBtn.classList.remove("hide")
 }
+
+function cargarDatos () {
+    fetch("datos.json")
+        .then(response => response.json())
+        .then(pizzaTile => {
+            for (let i = 0; i < tituloPizza.length; i++) {
+                tituloPizza[i].innerText = pizzaTile[i].name
+            }
+        })
+}
+
+cargarDatos()

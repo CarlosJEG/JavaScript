@@ -8,6 +8,16 @@
     font-weight: bold;
 }
 
+@mixin btn3 {
+    padding: 15px 30px;
+    background-color: $primaryColor;
+    border: none;
+    border-radius: 15px;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+}
+
 @mixin btn2 {
     padding: 10px;
     background-color: $primaryColor;
